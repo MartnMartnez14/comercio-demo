@@ -134,7 +134,9 @@
 
   /* ─── HERO ─── */
   .hero {
-    background: linear-gradient(160deg, var(--brand-l) 0%, #fdfefd 55%);
+    background:
+      linear-gradient(90deg, rgba(255,255,255,0.97) 0%, rgba(255,255,255,0.9) 38%, rgba(255,255,255,0.35) 70%, rgba(255,255,255,0.1) 100%),
+      url('img/hero-productos.jpg') center right / cover no-repeat;
     border-bottom: 1px solid var(--line);
     padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem);
   }
@@ -258,7 +260,8 @@
   .product .p-add svg { width: 16px; height: 16px; }
 
   /* ─── MAYORISTA ─── */
-  .mayorista { background: linear-gradient(150deg, var(--brand-d), #0d4a29); color: #fff; }
+  .mayorista { background: linear-gradient(120deg, rgba(13,74,41,0.95) 0%, rgba(20,102,58,0.86) 50%, rgba(13,74,41,0.72) 100%), url('img/mayorista-pasillo.jpg') center / cover no-repeat; color: #fff; }
+  .stat { backdrop-filter: blur(6px); }
   .mayorista-inner { max-width: 1280px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: clamp(2rem,5vw,4rem); align-items: center; }
   .mayorista h2 { color: #fff; font-size: clamp(1.7rem,3.2vw,2.5rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1rem; }
   .mayorista p { color: rgba(255,255,255,0.82); font-size: 1rem; margin-bottom: 1.75rem; max-width: 480px; }
@@ -292,9 +295,12 @@
   .note { font-size: 0.76rem; color: var(--ink3); margin-top: 1rem; background: var(--surface); border: 1px solid var(--line); padding: 0.6rem 0.9rem; border-radius: 10px; }
 
   /* ─── CTA ─── */
-  .cta { background: var(--surface); border-top: 1px solid var(--line); text-align: center; }
+  .cta { background: linear-gradient(rgba(15,31,21,0.78), rgba(15,31,21,0.7)), url('img/pedido-delivery.jpg') center / cover no-repeat; text-align: center; color: #fff; padding-top: clamp(4rem,8vw,6.5rem) !important; padding-bottom: clamp(4rem,8vw,6.5rem) !important; }
+  .cta h2 { color: #fff; }
+  .cta .btn-outline { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.5); backdrop-filter: blur(4px); }
+  .cta .btn-outline:hover { background: #fff; color: var(--ink); border-color: #fff; }
   .cta h2 { font-size: clamp(1.8rem,3.4vw,2.6rem); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
-  .cta p { color: var(--ink2); max-width: 480px; margin: 0 auto 2rem; }
+  .cta p { color: rgba(255,255,255,0.85); max-width: 480px; margin: 0 auto 2rem; }
   .cta-buttons { display: flex; gap: 0.8rem; justify-content: center; flex-wrap: wrap; }
 
   /* ─── FOOTER ─── */
@@ -320,7 +326,7 @@
   .topbar .social a { width: 24px; height: 24px; background: rgba(255,255,255,0.12); }
   .topbar .social a svg { width: 13px; height: 13px; }
   .cta .social { justify-content: center; margin-top: 1.5rem; }
-  .cta .social a { background: #fff; color: var(--ink2); border: 1px solid var(--line); width: 44px; height: 44px; }
+  .cta .social a { background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.3); width: 44px; height: 44px; }
   .cta .social a:hover { color: #fff; }
 
   /* ─── WHATSAPP FLOTANTE ─── */
@@ -336,6 +342,7 @@
     .header-inner .search { order: 3; max-width: none; width: 100%; flex-basis: 100%; margin-top: 0.5rem; }
     .header-inner { flex-wrap: wrap; }
     .hero-inner { grid-template-columns: 1fr; }
+    .hero { background: linear-gradient(180deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.88) 60%, rgba(255,255,255,0.6) 100%), url('img/hero-productos.jpg') 75% center / cover no-repeat; }
     .benefits-grid { grid-template-columns: repeat(2, 1fr); }
     .cat-grid { grid-template-columns: repeat(2, 1fr); }
     .offers-grid { grid-template-columns: repeat(2, 1fr); }
